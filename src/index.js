@@ -9,7 +9,7 @@ const loadQuran = () =>
       return resolve(quranCache)
     }
 
-    fs.readFile(path.join(__dirname, 'quran-uthman.txt'), 'utf-8', (err, text) => {
+    fs.readFile(path.join(__dirname, 'quran-uthmani.txt'), 'utf-8', (err, text) => {
       if (err) {
         return reject(err)
       }
