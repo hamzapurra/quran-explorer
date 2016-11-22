@@ -1,0 +1,22 @@
+{
+  "name": "quran-explorer",
+  "version": "1.0.0",
+  "description": "Explore the Quran",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamzapurra/quran-explorer.git"
+  },
+  "keywords": [
+    "quran"
+  ],
+  "author": "Hamza M. Purra <gm00cell@gmail.com> (http://hamzapurra.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hamzapurra/quran-explorer/issues"
+  },
+  "homepage": "https://github.com/hamzapurra/quran-explorer#readme"
+}
