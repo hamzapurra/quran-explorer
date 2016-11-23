@@ -1,14 +1,16 @@
 {
   "name": "quran-explorer",
-  "version": "1.0.1",
+  "version": "0.0.0-semantic-release",
   "description": "Explore the Quran",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz",
+    "test": "mocha src/__tests__/**/*.test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hamzapurra/quran-explorer.git"
+    "url": "https://github.com/hamzapurra/quran-explorer.git"
   },
   "keywords": [
     "quran"
@@ -18,9 +20,18 @@
   "bugs": {
     "url": "https://github.com/hamzapurra/quran-explorer/issues"
   },
+  "homepage": "https://github.com/hamzapurra/quran-explorer#readme",
   "devDependencies": {
     "chai": "3.5.0",
-    "mocha": "3.1.2"
+    "commitizen": "2.8.6",
+    "cz-conventional-changelog": "1.2.0",
+    "mocha": "3.1.2",
+    "semantic-release": "^6.3.2",
+    "semantic-release-cli": "3.0.0"
   },
-  "homepage": "https://github.com/hamzapurra/quran-explorer#readme"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
 }
