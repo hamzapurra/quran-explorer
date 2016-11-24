@@ -1,8 +1,8 @@
-const { expect } = require('chai')
+import { expect } from 'chai'
 
-const loadQuran = require('../loadQuran')
-const { getVerse, getSurah } = require('../index')
-const { verseCountBySurah, verseIndexBySurah } = require('../versesBySurah')
+import loadQuran from '../loadQuran'
+import { getVerse, getSurah } from '../index'
+import { verseCountBySurah, verseIndexBySurah } from '../versesBySurah'
 
 describe('getVerse', function() {
   it('should return the first verse', function(done) {

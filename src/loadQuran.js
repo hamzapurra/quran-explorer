@@ -1,5 +1,5 @@
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
 
 let quranCache = null
 
@@ -18,4 +18,4 @@ const loadQuran = () =>
     })
   })
 
-module.exports = loadQuran
+export default loadQuran
