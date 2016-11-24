@@ -7,6 +7,7 @@
     "commit": "git-cz",
     "test": "mocha src/__tests__/**/*.test.js",
     "coverage": "istanbul cover -x src/**/*.test.js _mocha -- -R spec src/**/*.test.js",
+    "check-coverage": "istanbul check-coverage --statements 75 --branches 75 --functions 75 --lines 75",
     "test:watch": "mocha src/__tests__/**/*.test.js -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -38,7 +39,7 @@
       "path": "node_modules/cz-conventional-changelog"
     },
     "ghooks": {
-      "pre-commit": "npm run test"
+      "pre-commit": "npm run test && npm run check-coverage"
     }
   }
 }
